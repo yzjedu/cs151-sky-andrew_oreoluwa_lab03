@@ -9,7 +9,7 @@
 # Data Out: Distance, Points earned
 # Credits: Used calculations provided in class
 
-# Include built in math module
+# Include built-in math module
 import math
 
 # Prompt user to input hill type
