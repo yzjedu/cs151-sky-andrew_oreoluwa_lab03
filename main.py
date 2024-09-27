@@ -16,11 +16,11 @@ import math
 hill_type = input("Enter hill type (Normal or Large): ")
 
 # Set parameters based on hill type
-if hill_type == "Normal":
+if hill_type.lower() == "normal":
     height = 46
     points_per_meter = 2
     par = 90
-elif hill_type == "Large":
+elif hill_type.lower()== "large":
     height = 70
     points_per_meter = 1.8
     par = 120
