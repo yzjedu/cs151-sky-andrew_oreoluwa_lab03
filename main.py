@@ -7,20 +7,26 @@
 # Purpose: Given the type of ski jump (normal vs. large) and the jumper’s speed at the end of the ramp, this program predicts how far they will jump
 # Data In: Hill type, Speed
 # Data Out: Distance, Points earned
-# Credits: Used calculations provided in class
+# Credits: Used calculations and techniques learned in class
 
 # Include built-in math module
 import math
 
+#  State purpose of program
+print ("Welcome! This program predicts how far a ski jumper will jump given the type of ski jump and the jumper's speed")
+
 # Prompt user to input hill type
 hill_type = input("Enter hill type (Normal or Large): ")
 
+# Catch if the user inputs wrong type of value
+hill_type = hill_type.lower().strip()
+
 # Set parameters based on hill type
-if hill_type.lower() == "normal":
+if hill_type == "normal":
     height = 46
     points_per_meter = 2
     par = 90
-elif hill_type.lower()== "large":
+elif hill_type== "large":
     height = 70
     points_per_meter = 1.8
     par = 120
